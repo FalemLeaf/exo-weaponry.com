@@ -1,0 +1,300 @@
+@import url(anims.css);
+html{
+    scrollbar-width: thin;
+    stroke-opacity: 20%;
+    scrollbar-color: #c50000 #1E0B0B;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    video{
+        position: fixed;
+        top: 60px;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 60%;
+    }
+    
+
+    .nav{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 3px;
+        padding: 10px;
+        width: 100vw;
+        z-index: 100;
+        top: 0;
+        border-bottom: 1px solid red;
+        background-color: rgba(30, 11, 11, 0.95);
+        backdrop-filter: blur(3px);
+        .rightNavCont{
+            display: flex;
+            align-items: center;
+            .rightNav{
+                padding-left:5% ;
+                img{
+                    width: 150px;
+                }
+                p{
+                    font-family: jetMono;
+                    color: rgba(255, 255, 255, 0.25);
+                    margin: 0;
+                    font-size: 10px;
+                }
+            }
+            .searchBar{
+                margin-left: 5%;
+                display: flex;
+                align-items: center;
+                height: 30px;
+                width: 400px;
+                border: 2px solid #480000;
+                background-color: #0D0505;
+                padding: 3px 5px;
+                border-radius: 2px;
+                
+                .searchIcon {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-color: white;
+                    opacity: 25%;
+                    mask: url('/Assets/Icons/Search.svg') no-repeat center / contain;
+                }
+                
+                input{
+                    font-family: jetMono;
+                    background-color: rgba(0, 0, 0, 0);
+                    outline: none;
+                    border: none;
+                    height: 100%;
+                    width: 100%;
+                    color: white;
+                    font-size: 16px;
+                    
+                }
+            }
+            .searchBar:hover{
+                border: 2px solid red;
+                background-color: #480000;
+                .searchIcon{
+                    background-color: red;
+                }
+
+                
+            }
+        }
+        .leftNav{
+            display: flex;
+            font-family: jetMono;
+            margin-left: 50px;
+            margin-right: 100px;
+            .navButton{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 110px;
+                height: 30px;
+                background-color: rgba(47, 0, 0, 0.8);
+                border: 1px solid red;
+                border-bottom: 5px solid red;
+                padding: 0 5px;
+                margin-right: 10px;
+                opacity: 75%;
+
+
+                div{
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+
+                    .modeIcon {
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        background-color: white;
+                        mask: url('/Assets/Icons/dark.svg') no-repeat center / contain;
+                    }
+                    .supIcon{
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        background-color: white;
+                        mask: url('/Assets/Icons/support.svg') no-repeat center / contain;
+                    }
+                }
+
+                .arrowDIcon {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-color: red;
+                    mask: url('/Assets/Icons/arrowD.svg') no-repeat center / contain;
+                }
+            }
+            .navButton:hover{
+                opacity: 100%;
+            }
+        }
+        
+    }
+    .contentBody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 200px;
+            .head{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 600px;
+                }
+                .subtitle{
+                    background: linear-gradient(90deg,#2f00009f,rgba(255, 0, 0, 0));
+                    border-left: 5px solid red;
+                    width: 590px;
+                    font-family: jetMono;
+                    font-size: 8px;
+                    h1{
+                        margin-left: 50px;
+                    }
+                }
+            }
+            .dlCont{
+                display: flex;
+                margin-top: 50px;
+                padding-bottom: 5px;
+                border-bottom: 2px solid red;
+                width: 220px;
+                justify-content: center;
+
+                .dlButton{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgba(47, 0, 0, 0.8);
+                    width: 200px;
+                    height: 60px;
+                    border: 1px solid red;
+                    border-bottom: 5px solid red;
+                    border-radius: 2px;
+                    a{
+                        text-decoration: none;
+                        font-family: jetMono;
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+                .dlButton:hover{
+                    background-color: red;
+                    border: 1px solid rgb(136, 0, 0);
+                    border-bottom: 5px solid rgb(136, 0, 0);
+                }
+            }
+        }
+        .divider{
+            margin-top: 100px;
+            margin-bottom: 0;
+            padding:0;
+            opacity: 50%;
+            pointer-events: none;
+        }
+        .overview{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 0;
+
+
+            .magiCircle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                position: absolute;
+                
+
+                img{
+                    align-self: center;
+                    justify-self: center;
+                    position: absolute;
+                    pointer-events: none;
+
+                }
+                .center{
+                    width: 300px;
+                    animation: rotRight 120s linear infinite,opaPulse 3s linear infinite;
+                }
+                .in1{
+                    width: 220px;
+                    animation: rotLeft 60s linear infinite;
+                }
+                .in2{
+                    width: 370px;
+                    animation: rotLeft 60s linear infinite,opaPulse 1.5s linear infinite;
+                    filter: drop-shadow(0px 0px 8px red)
+                    
+                }
+                .mid{
+                    width: 575px;
+                    animation: rotRight 120s linear infinite;
+                    filter: drop-shadow(0px 0px 8px red)
+                }
+                .out1{
+                    width: 550px;
+                    animation: rotRight 120s linear infinite;
+                    opacity: 80%;
+                }
+                .out2{
+                    width: 680px;
+                    animation: rotLeft 240s linear infinite, opaPulse 3s linear infinite;
+                    filter: drop-shadow(0px 0px 8px red)
+                    
+                }
+            }
+            .contSelection{
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                .contSelc{
+                    height: 160px;
+                    min-width: 300px;
+                    margin: 0 160px;
+                    background-color: rgba(47, 0, 0, 0.85);
+                    box-shadow: 2px 4px 8px rgb(0, 0, 0);
+                    border: 1px solid red;
+                    border-bottom: 5px solid red;
+                    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(10px);
+
+
+                }
+            }
+        }
+    }
+    
+    .footer{
+        height: 100vh;
+    }
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: pirata;
+    src: url(/Assets/Fonts/PirataOne-Regular.ttf);
+}
+@font-face {
+    font-family: jetMono;
+    src: url(/Assets/Fonts/JetBrainsMono-Regular.ttf);
+}
+@font-face {
+    font-family: instru;
+    src: url(/Assets/Fonts/InstrumentSerif-Regular.ttf);
+}
