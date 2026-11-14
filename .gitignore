@@ -1,0 +1,16 @@
+# # one specific file
+# notes.txt
+classNames.txt
+
+# # a whole folder
+# Assets/files/
+
+
+# # all files of a type
+# *.png
+# *.mp4
+
+
+# # everything in a folder except one file
+# Assets/Temp/* (everything)
+# !Assets/Temp/keep.png (except)

@@ -3,6 +3,8 @@ html{
     scrollbar-width: thin;
     stroke-opacity: 20%;
     scrollbar-color: #c50000 #1E0B0B;
+    font-family: jetMono;
+    font-weight: 50;
 }
 body{
     display: flex;
@@ -13,14 +15,28 @@ body{
     color: white;
     background-color: black;
     justify-content: center;
-    video{
+    .bgGrid{
+        position: fixed;
+        top: 0;
+        z-index: -100;
+        opacity: 80%;
+        width: 100vw;
+        height: 100vh;
+    }
+    .HomeBg{
+        display: flex;
+        flex-direction: column;
         position: fixed;
         top: 60px;
-        z-index: -1;
         height: 100%;
         width: 100%;
         object-fit: cover;
-        opacity: 60%;
+        z-index: -100;
+        video{
+            opacity: 60%;
+            z-index: -1;
+        }
+        
     }
     
 
@@ -174,6 +190,8 @@ body{
                     font-size: 8px;
                     h1{
                         margin-left: 50px;
+                        font-weight: 50;
+
                     }
                 }
             }
@@ -272,12 +290,12 @@ body{
                     
                 }
             }
-            .contSelection{
+            .cardSelection{
                 z-index: 1;
                 display: flex;
                 justify-content: center;
                 width: 100%;
-                .contSelc{
+                .card{
                     height: 160px;
                     min-width: 300px;
                     margin: 0 160px;
@@ -288,7 +306,9 @@ body{
                     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
                     backdrop-filter: blur(10px);
 
-
+                    .cardTitle{
+                        
+                    }
                 }
             }
         }
