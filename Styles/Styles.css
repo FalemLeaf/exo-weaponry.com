@@ -69,7 +69,7 @@ body{
                     height: 24px;
                     background-color: white;
                     opacity: 25%;
-                    mask: url('/Assets/Icons/Search.svg') no-repeat center / contain;
+                    mask: url('../Assets/Icons/Search.svg') no-repeat center / contain;
                 }
                 
                 input{
@@ -123,14 +123,14 @@ body{
                         width: 24px;
                         height: 24px;
                         background-color: white;
-                        mask: url('/Assets/Icons/dark.svg') no-repeat center / contain;
+                        mask: url('../Assets/Icons/dark.svg') no-repeat center / contain;
                     }
                     .supIcon{
                         display: inline-block;
                         width: 24px;
                         height: 24px;
                         background-color: white;
-                        mask: url('/Assets/Icons/support.svg') no-repeat center / contain;
+                        mask: url('../Assets/Icons/support.svg') no-repeat center / contain;
                     }
                 }
 
@@ -139,7 +139,7 @@ body{
                     width: 24px;
                     height: 24px;
                     background-color: red;
-                    mask: url('/Assets/Icons/arrowD.svg') no-repeat center / contain;
+                    mask: url('../Assets/Icons/arrowD.svg') no-repeat center / contain;
                 }
             }
             .navButton:hover{
