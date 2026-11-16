@@ -1,36 +1,33 @@
 @import url(anims.css);
 html{
-    scrollbar-width: thin;
-    stroke-opacity: 20%;
     scrollbar-color: #c50000 #1E0B0B;
     font-family: jetMono;
+    scrollbar-width: thin;
+    stroke-opacity: 20%;
     font-weight: 50;
 }
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px;
+    background-color: black;
+    color: white;
     height: 100%;
     width: 100%;
-    color: white;
-    background-color: black;
-    justify-content: center;
-
-    
+    margin: 0px;
 
     .HomeBg{
-        display: flex;
         flex-direction: column;
+        object-fit: cover;
         position: fixed;
-        top: 0px;
+        display: flex;
+        z-index: -100;
         height: 100%;
         width: 100%;
-        object-fit: cover;
-        z-index: -100;
+        top: 0px;
         .MainBg{
-            opacity: 60%;
-            z-index: -1;
+            opacity: 100%;
+            z-index: -100;
         }
         .GridBg{
             display: flex;
@@ -38,7 +35,7 @@ body{
             background-image: url(../Assets/Imgs/BgGrid.png);
             position: fixed;
             top: 0;
-            opacity: 80%;
+            opacity: 50%;
             width: 100%;
             height: 100vh;
             background-size: 100vw;
@@ -240,35 +237,36 @@ body{
         }
         .divider{
             margin-top: 100px;
+            z-index: 1;
             margin-bottom: 0;
             padding:0;
-            opacity: 50%;
+            opacity: 100%;
             pointer-events: none;
         }
         .overview{
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            width: 100%;
-            align-items: center;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
             padding: 50px 0;
+            display: flex;
+            height: 100%;
             width: 100%;
-
+            margin-top: 400px;
 
             .magiCircle{
-                display: flex;
+                position: relative;
+                justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                z-index: 10;
-                
+                display: flex;
+                z-index: 100;
+                width: 100%;
+                height: 100%;
 
                 img{
-                    align-content: center;
-
                     position: absolute;
                     pointer-events: none;
+                    align-self: center;
 
                 }
                 .center{
@@ -293,7 +291,7 @@ body{
                 .out1{
                     width: 550px;
                     animation: rotRight 120s linear infinite;
-                    opacity: 80%;
+                    opacity: 100%;
                 }
                 .out2{
                     width: 680px;
@@ -303,14 +301,16 @@ body{
                 }
             }
             .cardSelection{
-                z-index: 1;
-                display: flex;
+                position: absolute;
                 justify-content: center;
+                align-items: center;
+                display: flex;
                 width: 100%;
+                height: 100%;
                 .card{
                     height: 160px;
                     min-width: 300px;
-                    margin: 0 160px;
+                    margin: 0 140px;
                     background-color: rgba(47, 0, 0, 0.85);
                     box-shadow: 2px 4px 8px rgb(0, 0, 0);
                     border: 1px solid red;
