@@ -27,7 +27,7 @@ body{
         top: 0px;
         .MainBg{
             opacity: 100%;
-            z-index: -100;
+            z-index: -900;
         }
         .GridBg{
             display: flex;
@@ -365,6 +365,9 @@ body{
                     }
                 }
                 
+            }
+            .cardSelection_Mobile{
+                display: none;
             }
         }
     }
