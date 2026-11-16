@@ -79,6 +79,7 @@ body{
                 top: -400px;
                 width: 100%;
                 .card{
+                    display: none;
                     transform: scale(0.8);
                     margin: 0 0px;
                     padding: 0;
