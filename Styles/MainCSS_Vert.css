@@ -35,9 +35,11 @@ body{
                 }
             }
             .searchBar{
-                margin-left: 0;
-                width: 50px;
+                width: 100px;
+                input{
+                    font-size: 12px;
             
+                }
 
             }
         }
@@ -66,10 +68,15 @@ body{
             .magiCircle{
                 transform: scale(0.4);
                 opacity: 30%;
+                top: -235px;
             }
             .cardSelection{
+                display: none;
+                position: relative;
                 display: grid;
+                grid-template-columns: auto;
                 justify-content: center;
+                top: -400px;
                 width: 100%;
                 .card{
                     transform: scale(0.8);
