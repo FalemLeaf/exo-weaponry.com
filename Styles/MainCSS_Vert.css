@@ -43,8 +43,7 @@ body{
         }
 
         .leftNav{
-            margin: 0;
-            width: 100%;
+            margin: 0 10px;
             justify-content: left;
             .navButton{
                 width: 50px;
