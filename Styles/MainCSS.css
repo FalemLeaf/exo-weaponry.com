@@ -323,11 +323,12 @@ body{
                         .cardLeft{
                             text-align: left;
                             width: 250px;
-                            h1{
+                            .cardTitle{
                                 margin: 30px 10px 0px 10px;
                                 font-size: 28px;
                             }
-                            p{
+                            .cardDesc{
+                                opacity: 70%;
                                 margin: 0px 10px;
 
                             }

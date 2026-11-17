@@ -62,19 +62,30 @@ body{
         justify-content: center;
         .header{
             height: 30vh;
-            transform: scale(0.45);
+            transform: scale(0.5);
         }
         .overview{
+            position: relative;
+            width: 100vw;
+
             .magiCircle{
                 transform: scale(0.4);
-                opacity: 30%;
+                z-index: -10;
+                opacity: 100%;
                 top: -235px;
             }
             .cardSelection{
                 display: none;
             }
             .cardSelection_Mobile{
+                position: absolute;
+                top: -290px;
                 display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(2, 160px);
+                grid-auto-rows: auto;
+                grid-auto-flow: row;
+                width: 100%;
                 gap: 1em;
                 .card{
                     background-color: rgba(47, 0, 0, 0.85);
@@ -83,30 +94,27 @@ body{
                     border-bottom: 5px solid red;
                     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
                     backdrop-filter: blur(10px);
-                    width: 240px;
+                    width: auto;
                     .cardTop{
                         display: flex;
-                        justify-content: center;
                         align-items: center;
-                        width: 100%;
+                        margin: 5px;
+                        margin-left: 10px;
+                        width: auto;
                         .cardLeft{
-                            width: 65%;
+                            width: auto;
                             .cardTitle{
-                                font-size: 20px;
+                                font-size: clamp(12px, 10cqi, 16px);
+                                font-weight: 150;
                                 margin: 0px;
-                                margin-top: 16px;
                             }
                             .cardDesc{
-                                margin: 0px 0 5px 0;
-                                font-size: 10px;
+                                font-size: clamp(8px, 10cqi, 8px);
+                                font-weight: normal;
+                                opacity: 70%;
+                                margin: 0px;
                             }
-                        }
-                        .cardRight{
-                            img{
-                                width: 60px;
-                                height: 60px;
-                            }
-                        }
+                        }              
                     }
                     .cardBottom{
                             justify-content: right;
