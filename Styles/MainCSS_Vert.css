@@ -14,9 +14,6 @@ body{
             top: 50px;
         }
     }
-    .divider{
-        transform: scale(0.35);
-    }
 
     .nav{
         height: auto;
@@ -64,8 +61,14 @@ body{
     .contentBody{
         justify-content: center;
         .header{
-            height: 30vh;
+            margin-top: 100px;
             transform: scale(0.5);
+            height: 300px;
+        }
+        .divider{
+            transform: scale(0.35);
+            margin-top: 0px;
+            margin-bottom: 40px;
         }
         .overview{
             position: relative;
@@ -108,7 +111,7 @@ body{
                             width: auto;
                             .cardTitle{
                                 font-size: clamp(12px, 10cqi, 16px);
-                                font-weight: 150;
+                                font-weight: bolder;
                                 margin: 0px;
                             }
                             .cardDesc{

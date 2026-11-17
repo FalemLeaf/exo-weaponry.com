@@ -255,6 +255,7 @@ body{
 
             .magiCircle{
                 position: relative;
+                pointer-events: none;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
