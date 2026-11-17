@@ -26,7 +26,7 @@ body{
         width: 100%;
         top: 0px;
         .MainBg{
-            opacity: 100%;
+            opacity: 50%;
             z-index: -900;
         }
         .GridBg{
@@ -35,9 +35,9 @@ body{
             background-image: url(../Assets/Imgs/BgGrid.png);
             position: fixed;
             top: 0;
-            opacity: 50%;
+            opacity: 30%;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             background-size: 100vw;
         }
         
