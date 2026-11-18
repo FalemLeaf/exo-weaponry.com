@@ -307,66 +307,50 @@ body{
                 justify-content: center;
                 align-items: center;
                 display: flex;
-                width: 100%;
+                width: 80%;
                 height: 100%;
-                .cardRow{
-                    display: flex;
-                    position: absolute;
+                .topCards{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 30%;
                     .card{
-                        height: 200px;
-                        width: 350px;
-                        margin: 0 140px;
-                        background-color: rgba(47, 0, 0, 0.85);
-                        box-shadow: 2px 4px 8px rgb(0, 0, 0);
-                        border: 1px solid red;
-                        border-bottom: 5px solid red;
-                        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-                        backdrop-filter: blur(10px);
-                        .cardLeft{
-                            text-align: left;
-                            width: 250px;
-                            .cardTitle{
-                                margin: 30px 10px 0px 10px;
-                                font-size: 28px;
-                            }
-                            .cardDesc{
-                                opacity: 70%;
-                                margin: 0px 10px;
+                        width: auto;
+                        background-color: #480000;
+                        .cardTS{
+                            margin: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .lftS{
+                                width: 50%;
+                                h2{
+                                    font-size: 2em;
+                                    margin: 0;
+                                    margin-top: 25px;
+                                    font-weight: 1000;
+                                }
+                                p{
+                                    margin: 0;
+                                    font-size: 1em;
+                                    opacity: 70%;
 
+                                }
                             }
-                            .cardBottom{
-                                display: flex;
-                                align-items: center;
-                                margin-top: 10px;
+                            .rghtS{
+                                .icon{
+                                    display: block;
+                                    width: 100px;
+                                    height: 100px;
+                                    background-color: red;
+                                    mask: url('../Assets/Icons/Forge.svg') no-repeat center / contain;
+                                }
+                                
                             }
-                        }
-                        .cardRight{
-                            width: 100px;
                         }
                     }
                 }
-                .cardColumn{
-                    display: flex;
-                    justify-content: space-between;
-                    height: 600px;
-                    flex-direction: column;
-                    position: absolute;
-                    .card{
-                        height: 160px;
-                        width: 300px;
-                        margin: 0 140px;
-                        background-color: rgba(47, 0, 0, 0.85);
-                        box-shadow: 2px 4px 8px rgb(0, 0, 0);
-                        border: 1px solid red;
-                        border-bottom: 5px solid red;
-                        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-                        backdrop-filter: blur(10px);
-                        padding-left: 20px;
-                        h1{
-                            margin: 0;
-                        }
-                    }
-                }
+                
+                
                 
             }
             .cardSelection_Mobile{
