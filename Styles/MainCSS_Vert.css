@@ -101,12 +101,12 @@ body{
                 grid-auto-rows: auto;
                 grid-auto-flow: row;
                 width: 50%;
-                gap: 0.5em 2em;
+                gap: 2em 5em;
                 .card{
                     background-color: rgba(47, 0, 0, 0.85);
                     box-shadow: 2px 4px 8px rgb(0, 0, 0);
-                    border: 1px solid red;
-                    border-bottom: 5px solid red;
+                    border: 1px solid #D30005;
+                    border-radius: 2.5px;
                     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
                     backdrop-filter: blur(10px);
                     width: auto;
@@ -126,8 +126,7 @@ body{
                             justify-content: right;
                             align-items: center;
                             height: 30px;
-                            background-color: red;
-                            border-radius: 2px;
+                            background-color: #D30005;
 
                             .cardText{
                                 margin: 0px;
@@ -138,8 +137,8 @@ body{
                             }
                             
                             .arrowR{
-                                width: 30px;
-                                height: 30px;
+                                width: 32px;
+                                height: 32px;
                                 background-color: rgba(47, 0, 0, 1);
                                 mask: url('../Assets/Icons/arrowR.svg') no-repeat center / contain;
                             }
