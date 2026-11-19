@@ -319,7 +319,8 @@ body{
                 .topCards{
                     display: flex;
                     justify-content: center;
-                    width: 32%;
+                    max-width: 300px;
+                    width: 35%;
                     margin-bottom: 100px;
                     
                 }
