@@ -74,6 +74,10 @@ body{
             margin-top: 100px;
             transform: scale(0.5);
             height: 300px;
+            .dlCont{
+                transform: scale(1.5);
+                margin-top: 80px;
+            }
         }
         .divider{
             transform: scale(0.35);
@@ -94,11 +98,14 @@ body{
             }
             .cardSelection{
                 display: none;
+                width: auto;
+                max-width: 80%;
             }
             .cardSelection_Mobile{
                 position: absolute;
-                top: -290px;
-                display: grid;
+                top: -320px;
+                display: flex;
+                flex-direction: column;
                 justify-content: center;
                 grid-template-columns: repeat(2, 100px);
                 grid-auto-rows: auto;
@@ -106,6 +113,22 @@ body{
                 width: 50%;
                 gap: 2em 5em;
                 
+                .cardsTS{
+                    display: flex;
+                    justify-content: center;
+                    .card{
+                        min-width: 100px;
+                    }
+                    
+                }
+                .cardsLS{
+                    display: grid;
+                    grid-template-columns: repeat(2, 100px);
+                    justify-content: center;
+                    grid-auto-rows: auto;
+                    grid-auto-flow: row;
+                    gap: 5em;
+                }
                 .card{
                     background-color: #480000da;
                     box-shadow: 2px 4px 8px rgb(0, 0, 0);

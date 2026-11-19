@@ -327,7 +327,10 @@ body{
                 .midCards{
                     display: flex;
                     justify-content: center;
-                    gap: 10% 30%;
+                    gap: 2em 10em;
+                    .card{
+                        max-width: 280px;
+                    }
                     
                 }
                 .card{
