@@ -121,13 +121,31 @@ body{
                     }
                     
                 }
-                .cardsLS{
+                .cardsM{
                     display: grid;
                     grid-template-columns: repeat(2, 100px);
                     justify-content: center;
                     grid-auto-rows: auto;
                     grid-auto-flow: row;
                     gap: 5em;
+                }
+                .cardsLS{
+                    display: grid;
+                    grid-template-columns: repeat(2, 110px);
+                    justify-content: center;
+                    grid-auto-rows: auto;
+                    grid-auto-flow: row;
+                    gap: 1em;
+                    .card{
+                        justify-content: left;
+                        .name{
+                            text-align: left;
+                            font-size: 12px;
+                            margin:0;
+                            color: #D30005;
+                        }
+                        
+                    }
                 }
                 .card{
                     background-color: #480000da;
@@ -164,6 +182,7 @@ body{
                             }
                             
                             .arrowR{
+                                display: inline;
                                 width: 32px;
                                 height: 32px;
                                 background-color: #480000da;
