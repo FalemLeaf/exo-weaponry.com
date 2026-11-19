@@ -225,7 +225,7 @@ body{
                     height: 60px;
                     border: 1px solid red;
                     border-bottom: 5px solid red;
-                    border-radius: 2px;
+                    border-radius: 3.5px;
                     a{
                         text-decoration: none;
                         font-family: jetMono;
@@ -316,22 +316,36 @@ body{
                 flex-direction: column;
                 width: 80%;
                 height: 100%;
-                .topCards{
+                .CardsTS{
                     display: flex;
                     justify-content: center;
                     max-width: 300px;
                     width: 35%;
-                    margin-bottom: 100px;
+                    margin-bottom: 80px;
                     
                 }
-                .midCards{
+                .CardsM{
                     display: flex;
                     justify-content: center;
-                    gap: 2em 10em;
+                    gap: 2em 15em;
+                    margin-bottom: 80px;
                     .card{
                         max-width: 280px;
                     }
                     
+                }
+                .CardsLS{
+                    display: flex;
+                    justify-content: center;
+                    gap: 2em 6em;
+                    .card{
+                        h2{
+                            width: 200px;
+                            font-size: 20px;
+                            margin: 0;
+                        }
+                        
+                    }
                 }
                 .card{
                     width: auto;
@@ -341,7 +355,7 @@ body{
                     border: 1px solid red;
                     border-bottom: 7px solid red;
                     border-radius: 5px;
-                    .cardTS{
+                    .cardTop{
                         display: flex;
                         .lftS{
                             width: 70%;
@@ -368,7 +382,7 @@ body{
                             }
                         }
                     }
-                    .cardLS{
+                    .cardBottom{
                         display: flex;
                         align-items: center;
                         justify-content: right;

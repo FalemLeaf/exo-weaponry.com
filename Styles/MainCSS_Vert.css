@@ -131,7 +131,7 @@ body{
                 }
                 .cardsLS{
                     display: grid;
-                    grid-template-columns: repeat(2, 110px);
+                    grid-template-columns: repeat(2, 80px);
                     justify-content: center;
                     grid-auto-rows: auto;
                     grid-auto-flow: row;
@@ -140,7 +140,7 @@ body{
                         justify-content: left;
                         .name{
                             text-align: left;
-                            font-size: 12px;
+                            font-size: 10px;
                             margin:0;
                             color: #D30005;
                         }
@@ -149,11 +149,9 @@ body{
                 }
                 .card{
                     background-color: #480000da;
-                    box-shadow: 2px 4px 8px rgb(0, 0, 0);
                     border: 1px solid #D30005;
                     border-radius: 2.5px;
-                    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(2px);
+                    backdrop-filter: blur(1px);
                     width: auto;
                     .cardTop{
                         display: flex;
