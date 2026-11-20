@@ -194,10 +194,11 @@ body{
         }
     }
     .footer{
-        height: 100px;
+        height: 140px;
         
         .license{
             font-size: 8px;
+            width: 90%;
         }
 
         .footBottom{
@@ -205,13 +206,13 @@ body{
 
             .logo{
                 width: auto;
-                height: 50px;
+                height: 32px;
                 object-fit: cover;
 
             }
             .footInfo{
-                width: 40%;
-                height: 80%;
+                width: 60%;
+                height: 70%;
                 border-left: 2.5px solid red;
                 border-radius: 2px;
                 .footDesc{
