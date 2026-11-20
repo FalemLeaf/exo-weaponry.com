@@ -148,7 +148,7 @@ body{
                     }
                 }
                 .card{
-                    background-color: #480000da;
+                    background-color: rgba(72, 0, 0, 0.8);
                     border: 1px solid #D30005;
                     border-radius: 2.5px;
                     backdrop-filter: blur(1px);
