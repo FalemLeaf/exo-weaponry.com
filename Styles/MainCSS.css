@@ -237,8 +237,8 @@ body{
                 }
                 .dlButton:hover{
                     background-color: red;
-                    border: 1px solid rgb(136, 0, 0);
-                    border-bottom: 5px solid rgb(136, 0, 0);
+                    border: 1px solid rgb(200, 0, 0);
+                    border-bottom: 5px solid rgb(200, 0, 0);
                     cursor: pointer;
                 }
             }
