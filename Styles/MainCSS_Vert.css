@@ -59,6 +59,9 @@ body{
             justify-content: left;
             .navButton{
                 width: 50px;
+                .DLIcon{
+                    justify-content: center;
+                }
                 p{
                     display: none;
                     width: 0;
@@ -93,7 +96,7 @@ body{
                 transform: scale(0.8);
                 z-index: -10;
                 opacity: 30%;
-                top: -235px;
+                top: -200px;
 
             }
             .cardSelection{
@@ -127,7 +130,7 @@ body{
                     justify-content: center;
                     grid-auto-rows: auto;
                     grid-auto-flow: row;
-                    gap: 5em;
+                    gap: 8em;
                 }
                 .cardsLS{
                     display: grid;
