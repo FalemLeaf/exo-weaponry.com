@@ -131,18 +131,24 @@ body{
                 }
                 .cardsLS{
                     display: grid;
-                    grid-template-columns: repeat(2, 80px);
+                    grid-template-columns: repeat(2, 100px);
                     justify-content: center;
                     grid-auto-rows: auto;
                     grid-auto-flow: row;
                     gap: 1em;
                     .card{
                         justify-content: left;
+                        flex-direction: row;
                         .name{
                             text-align: left;
                             font-size: 10px;
                             margin:0;
                             color: #D30005;
+
+                            
+                        }
+                        .cardBottom{
+                            border-top: none;
                         }
                         
                     }
@@ -150,31 +156,32 @@ body{
                 .card{
                     background-color: rgba(72, 0, 0, 0.8);
                     border: 1px solid #D30005;
-                    border-radius: 2.5px;
+                    border-bottom: 5px solid #D30005;
+                    border-radius: 5px;
                     backdrop-filter: blur(1px);
                     width: auto;
                     .cardTop{
-                        display: flex;
+                        justify-content: center;    
                         align-items: center;
+                        display: flex;
                         margin: 5px;
                         width: auto;
-                        justify-content: center;    
                         .icon{
                             width: 50px;
+                            height: 50px;
                         }          
                     }
                     .cardBottom{
                             display: flex;
-                            border-top: 1px solid red;
+                            border-top: 1px solid rgb(255, 0, 0);
                             justify-content: right;
                             align-items: center;
                             height: 30px;
-                            background-color: #D30005;
 
                             .cardText{
                                 margin: 0px;
                                 font-size: 12px;
-                                color: #480000da;
+                                color: #ff0000;
                                 text-align: right;
                                 font-weight: 1000;
                             }
@@ -183,10 +190,35 @@ body{
                                 display: inline;
                                 width: 32px;
                                 height: 32px;
-                                background-color: #480000da;
+                                background-color: #ff0000;;
                                 mask: url('../Assets/Icons/arrowR.svg') no-repeat center / contain;
                             }
                         }
+                }
+                
+            }
+            .card:hover{
+                .cardBottom{
+                    background-color: #D30005;
+
+                    .name{
+                        color: rgba(72, 0, 0, 0.8);
+
+                    }
+                    .cardText{
+                        color: rgba(72, 0, 0, 0.8);
+                    }
+                    .arrowR{
+                        background-color: rgba(72, 0, 0, 0.8);
+                    }
+                }
+                
+            }
+            .cardsLS:hover{
+                .card{
+                    .cardBottom{
+                        border-radius: 3px 3px 0 0;
+                    }
                 }
             }
             
