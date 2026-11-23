@@ -71,7 +71,7 @@ body{
         }
     }
 
-    .contentBody{
+    main{
         justify-content: center;
         .header{
             margin-top: 100px;
@@ -231,7 +231,7 @@ body{
 
         }
     }
-    .footer{
+    footer{
         height: 140px;
         
         .license{

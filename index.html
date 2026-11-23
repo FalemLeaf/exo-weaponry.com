@@ -19,7 +19,7 @@
     <div class="nav">
         <div class="rightNavCont">
             <div class="rightNav">
-                <img id="logo" src="Assets/Imgs/Home/mod-header-logo.png" alt="logo">
+                <img class="logo" src="Assets/Imgs/Home/mod-header-logo.png" alt="logo">
                 <p>Web Version 0.0.2</p>
             </div>
             <div class="searchBar">
@@ -29,10 +29,10 @@
         </div>
         <div class="leftNav">
             <div class="navButton">
-                <div class="buttonCont" onclick="window.open('https://www.curseforge.com/hytale/mods/fls-exotic-weaponry')">
+                <a class="buttonCont" href="https://www.curseforge.com/hytale/mods/fls-exotic-weaponry">
                     <span class="DLIcon">Download</span>
                     <p>Download</p>
-                </div>
+                </a>
             </div>
             <div class="navButton">
                 <div class="buttonCont">
@@ -46,30 +46,30 @@
     <main>
         <div class="header">
             <div class="head">
-                <img id="headerLogo" src="Assets/Imgs/Home/mod-header-logo.png" alt="Mod-logo">
+                <img class="headerLogo" src="Assets/Imgs/Home/mod-header-logo.png" alt="Mod-logo">
                 <div class="subtitle">
                     <h1>Make your progression better. Forge, equip and ascend your weapon through the course of your journey.</h1>
                 </div>
             </div>
-            <div class="dlCont" onclick="window.open('https://www.curseforge.com/hytale/mods/fls-exotic-weaponry','_blank')">
+            <a class="dlCont" href="https://www.curseforge.com/hytale/mods/fls-exotic-weaponry" target="_blank">
                 <div class="dlButton">
                     <p>DOWNLOAD</p>
                 </div>
-            </div>
+            </a>
         </div>
         <img class="divider" src="Assets/Imgs/Divider.png" alt="divider">
         <div class="overview">
             <div class="magiCircle">
-                <img class="center" src="Assets/Imgs/Home/magic-circle/Center-star.png" alt="center-star">
-                <img class="in1" src="Assets/Imgs/Home/magic-circle/Inner-circle.png" alt="center-star">
-                <img class="in2" src="Assets/Imgs/Home/magic-circle/Inner-square-circle.png" alt="center-star">
-                <img class="mid" src="Assets/Imgs/Home/magic-circle/Middle-sqaure-circle.png" alt="center-star">
-                <img class="out1" src="Assets/Imgs/Home/magic-circle/Outer-star.png" alt="center-star">
-                <img class="out2" src="Assets/Imgs/Home/magic-circle/Outer-square-cicle.png" alt="center-star">
+                <img class="center" src="Assets/Imgs/Home/magic-circle/Center-star.webp" alt="center-star">
+                <img class="in1" src="Assets/Imgs/Home/magic-circle/Inner-circle.webp" alt="center-star">
+                <img class="in2" src="Assets/Imgs/Home/magic-circle/Inner-square-circle.webp" alt="center-star">
+                <img class="mid" src="Assets/Imgs/Home/magic-circle/Middle-sqaure-circle.webp" alt="center-star">
+                <img class="out1" src="Assets/Imgs/Home/magic-circle/Outer-star.webp" alt="center-star">
+                <img class="out2" src="Assets/Imgs/Home/magic-circle/Outer-square-cicle.webp" alt="center-star">
             </div>
             <ul class="cardSelection">
                 <li class="CardsTS">
-                    <a class="card" onclick="window.location.href='Pages/guides.html'">
+                    <a class="card" href="/Pages/guides.html">
                         <div class="cardTop">
                             <div class="lftS">
                                 <h2>GUIDE</h2>
@@ -85,8 +85,8 @@
                         </div>
                     </a>
                 </li>
-                <div class="CardsM">
-                    <div class="card"  onclick="window.location.href='Pages/weapons.html'">
+                <li class="CardsM">
+                    <a class="card"  href="/Pages/weapons.html">
                         <div class="cardTop">
                             <div class="lftS">
                                 <h2>WEAPONS</h2>
@@ -100,8 +100,8 @@
                             <p>Click Here</p>
                             <span class="icon"></span>
                         </div>
-                    </div>
-                    <div class="card"  onclick="window.location.href='Pages/Ingredients.html'">
+                    </a>
+                    <a class="card"  href="/Pages/Ingredients.html">
                         <div class="cardTop">
                             <div class="lftS">
                                 <h2>INGREDIENTS</h2>
@@ -115,10 +115,10 @@
                             <p>Click Here</p>
                             <span class="icon"></span>
                         </div>
-                    </div>
-                </div>
-                <div class="CardsLS">
-                    <div class="card">
+                    </a>
+                </li>
+                <li class="CardsLS">
+                    <a class="card">
                         <div class="cardTop">
                             <h2 class="name">LEARN MORE</h2>
                         </div>
@@ -126,8 +126,8 @@
                             <p>Click Here</p>
                             <span class="icon">arrowR</span>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a class="card">
                         <div class="cardTop">
                             <h2 class="name">ABOUT US</h2>
                         </div>
@@ -135,8 +135,8 @@
                             <p>Click Here</p>
                             <span class="icon">arrowR</span>
                         </div>
-                    </div>
-                </div>
+                    </a>
+                </li>
             </ul>
             <div class="cardSelection_Mobile">
                 <div class="cardsTS">
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="cardsM">
+                <div class="cardsM">
                     <div class="card">
                         <div class="cardTop">
                             <img class="icon" src="Assets/Icons/Weapons.svg" alt="weapons">
@@ -169,21 +169,21 @@
                             <span class="arrowR">arrowR</span>
                         </div>
                     </div>
-                </ul>
-                <a class="cardsLS">
+                </div>
+                <div class="cardsLS">
                     <div class="card">
                         <div class="cardBottom">
                             <h2 class="name">LEARN MORE</h2>
                             <span class="arrowR">arrowR</span>
                         </div>
                     </div>
-                    <a class="card">
+                    <div class="card">
                         <div class="cardBottom">
                             <h2 class="name">ABOUT US</h2>
                             <span class="arrowR">arrowR</span>
                         </div>
-                    </a>
-                </a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
