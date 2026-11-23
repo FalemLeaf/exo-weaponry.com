@@ -1,0 +1,283 @@
+html{
+    scrollbar-color: #c50000 #1E0B0B;
+    font-family: jetMono;
+    scrollbar-width: thin;
+    stroke-opacity: 20%;
+    font-weight: 50;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    user-select: none; 
+    color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+
+    .HomeBg{
+        flex-direction: column;
+        object-fit: cover;
+        position: fixed;
+        display: flex;
+        z-index: -100;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        .MainBg{
+            top: 100px  ;
+            opacity: 25%;
+            z-index: -900;
+            height: 100%;
+            transform: scale(1.5);
+
+        }
+        .GridBg{
+            display: flex;
+            align-items: center;
+            background-image: url(../Assets/Imgs/BgGrid.png);
+            position: fixed;
+            top: 0;
+            opacity: 30%;
+            width: 100%;
+            height: 100%;
+            background-size: 100vw;
+        }
+        
+    }
+    
+
+    .nav{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        margin: 0;
+        height: 70px;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+        border-bottom: 1px solid red;
+        background-color: rgba(30, 11, 11, 0.95);
+        backdrop-filter: blur(3px);
+        .rightNavCont{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: auto;
+            .rightNav{
+                padding-left:5% ;
+                img{
+                    width: 150px;
+                }
+                p{
+                    font-family: jetMono;
+                    color: rgba(255, 255, 255, 0.25);
+                    margin: 0;
+                    font-size: 10px;
+                }
+            }
+            .searchBar{
+                margin-left: 5%;
+                display: flex;
+                align-items: center;
+                height: 30px;
+                width: 400px;
+                border: 2px solid #480000;
+                background-color: #0D0505;
+                padding: 3px 5px;
+                border-radius: 2px;
+                
+                .searchIcon {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-color: white;
+                    opacity: 25%;
+                    mask: url('../Assets/Icons/Search.svg') no-repeat center / contain;
+                }
+                
+                input{
+                    font-family: jetMono;
+                    background-color: rgba(0, 0, 0, 0);
+                    outline: none;
+                    border: none;
+                    height: 100%;
+                    width: 100%;
+                    color: white;
+                    font-size: 16px;
+                    
+                }
+            }
+            .searchBar:hover{
+                border: 2px solid red;
+                background-color: #480000;
+                .searchIcon{
+                    background-color: red;
+                }
+
+                
+            }
+        }
+        .leftNav{
+            display: flex;
+            font-family: jetMono;
+            margin-left: 50px;
+            width: auto;
+            margin-right: 100px;
+            .navButton{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 110px;
+                height: 30px;
+                background-color: rgba(47, 0, 0, 0.8);
+                border: 1px solid red;
+                border-bottom: 5px solid red;
+                padding: 0 5px;
+                margin-right: 10px;
+                border-radius: 2px;
+                opacity: 75%;
+
+
+                .buttonCont{
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    justify-content: center;
+
+                    .DLIcon {
+                        display: inline-block;
+                        margin-right: 2px;
+                        width: 26px;
+                        height: 26px;
+                        background-color: white;
+                        mask: url('../Assets/Icons/download.svg') no-repeat center / contain;
+                    }
+                    .supIcon{
+                        display: inline-block;
+                        margin-right: 2px;
+                        width: 24px;
+                        height: 24px;
+                        background-color: white;
+                        mask: url('../Assets/Icons/support.svg') no-repeat center / contain;
+                    }
+                }
+
+                .arrowDIcon {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-color: red;
+                    mask: url('../Assets/Icons/arrowD.svg') no-repeat center / contain;
+                }
+            }
+            .navButton:hover{
+                opacity: 100%;
+                cursor: pointer;
+            }
+        }
+        
+    }
+    .contentBody{
+        height: 100vh;
+    }
+    .footer{
+        width: 100%;
+        height: 160px;
+        background-color: rgba(40, 0, 0, 0.8);
+        border-radius: 2.5px 2.5px 5px 5px;
+        border-bottom: 5px solid red;
+        border-top: 1px solid red;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        margin-top: 100px;
+        display: flex;
+
+        .license{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            margin-bottom: 10px;
+            p{
+                text-align: center;
+                opacity: 35%;
+            }
+            a{
+                margin-left: 5px;
+                text-decoration: none;
+                color: red;
+            }
+            a:hover{
+                color: white;
+                opacity: 100%;
+                text-decoration: underline;
+            }
+        }
+        
+        .footBottom{
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            margin: 0 50px;
+            height: 100%;
+            .logo{
+                width: auto;
+                height: 90px;
+                object-fit: cover;
+            }
+            .footInfo{
+                max-width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 25px;
+                border-left: 5px solid red;
+                border-radius: 5px;
+                height: 70%;
+
+                .footDesc{
+                    margin: 0;
+                    font-size: 12px;
+                    text-align: justify;
+                    opacity: 70%;
+
+                }
+                .linksCont{
+                    display: flex;
+                    justify-content: space-between;
+                    
+
+                    .link{
+                        display: flex;
+                        flex-direction: column;
+
+                        .cat{
+                            margin: 0;
+                            margin-top: 10px;
+                            font-size: 16px;
+                            font-weight: 200;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: red;
+                            font-size: 12px;
+                        }
+                        a:hover{
+                            color: white;
+                            opacity: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
