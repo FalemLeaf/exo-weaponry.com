@@ -1,7 +1,7 @@
 @import url(anims.css);
-
+@import url(Theme.css);
 html{
-    scrollbar-color: #c50000 #1E0B0B;
+    scrollbar-color: var(--clr-main) var(--clr-bg);
     scroll-behavior: smooth;
     font-family: jetMono;
     scrollbar-width: thin;
@@ -15,9 +15,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: black;
+    background-color: var(--clr-bg);
+    color: var(--clr-mainText);
     user-select: none; 
-    color: white;
     height: 100%;
     width: 100%;
     margin: 0px;
@@ -34,41 +34,41 @@ body{
         .MainBg{
             position: fixed;
             top: 100px;
-            opacity: 25%;
+            opacity: 35%;
             z-index: -100;
             width: 100%;
-            transform: scale(1);
+            transform: scale(1.5);
 
         }
         .GridBg{
             display: flex;
             align-items: center;
             background-image: url(../Assets/Imgs/BgGrid.png);
-            position: fixed;
-            top: 0;
-            opacity: 30%;
-            width: 100%;
-            height: 100%;
             background-size: 100vw;
+            position: fixed;
+            opacity: 30%;
+            height: 100%;
+            width: 100%;
+            top: 0;
         }
         
     }
     
 
     .nav{
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
         align-items: center;
+        position: fixed;
         padding: 10px 0;
-        margin: 0;
+        display: flex;
+        z-index: 100;
         height: 70px;
         width: 100%;
-        z-index: 100;
+        margin: 0;
         top: 0;
-        border-bottom: 1px solid red;
-        background-color: rgba(30, 11, 11, 0.95);
-        backdrop-filter: blur(3px);
+        border-bottom: 1px solid var(--clr-navBrdr);
+        background-color: var(--clr-navbg);
+        justify-content: space-between;
+        backdrop-filter: blur(6px);
         .rightNavCont{
             display: flex;
             justify-content: space-evenly;
@@ -81,9 +81,9 @@ body{
                 }
                 p{
                     font-family: jetMono;
-                    color: rgba(255, 255, 255, 0.25);
-                    margin: 0;
+                    color: var(--clr-navText);
                     font-size: 10px;
+                    margin: 0;
                 }
             }
             .searchBar{
@@ -92,16 +92,17 @@ body{
                 align-items: center;
                 height: 30px;
                 width: 400px;
-                border: 2px solid #480000;
-                background-color: #0D0505;
+                background-color: var(--clr-navbg);
+                border: 1px solid var(--clr-main);
+                border-radius: 2.5px;
                 padding: 3px 5px;
-                border-radius: 2px;
+                opacity: 70%;
                 
                 .searchIcon {
                     display: inline-block;
                     width: 24px;
                     height: 24px;
-                    background-color: white;
+                    background-color: var(--clr-navText);
                     opacity: 25%;
                     mask: url('../Assets/Icons/Search.svg') no-repeat center / contain;
                 }
@@ -113,16 +114,17 @@ body{
                     border: none;
                     height: 100%;
                     width: 100%;
-                    color: white;
+                    color: var(--clr-navText);
                     font-size: 16px;
                     
                 }
             }
             .searchBar:hover{
-                border: 2px solid red;
-                background-color: #480000;
+                border: 1px solid var(--clr-main);
+                background-color: var(--clr-navbg);
+                opacity: 100%;
                 .searchIcon{
-                    background-color: red;
+                    background-color: var(--clr-navBtnHvr);
                 }
 
                 
@@ -140,9 +142,9 @@ body{
                 align-items: center;
                 width: 110px;
                 height: 30px;
-                background-color: rgba(47, 0, 0, 0.8);
-                border: 1px solid red;
-                border-bottom: 5px solid red;
+                background-color: var(--clr-navBtnbg);
+                border: 1px solid var(--clr-main);
+                border-bottom: 5px solid var(--clr-main);
                 padding: 0 5px;
                 margin-right: 10px;
                 border-radius: 2px;
@@ -155,17 +157,24 @@ body{
                     font-size: 14px;
                     justify-content: center;
                     text-decoration: none;
-                    color: white;
+                    color: var(--clr-navText);
                     font-weight: 500;
 
-                    .supIcon, .DLIcon {
-                        background-color: white;
+                    .supIcon, .DLIcon, .ModeIcon{
+                        background-color: var(--clr-navText);
                         display: inline-block;
                         margin-right: 2px;
-                        color: white;
+                        color: var(--clr-navText);
                         height: 24px;
                         width: 24px;
                         mask: url('../Assets/Icons/download.svg') no-repeat center / contain;
+                    }
+                    .ModeIcon{
+                        mask: url('../Assets/Icons/dark.svg') no-repeat center / contain;
+                        
+                    }
+                    .supIcon{
+                        mask: url('../Assets/Icons/support.svg') no-repeat center / contain;
                     }
                 
                 }
@@ -174,17 +183,28 @@ body{
                     display: inline-block;
                     width: 24px;
                     height: 24px;
-                    background-color: red;
+                    background-color: var(--clr-navText);
                     mask: url('../Assets/Icons/arrowD.svg') no-repeat center / contain;
                 }
+            }
+            .mode{
+                width: 25px;
             }
             .navButton:hover{
                 opacity: 100%;
                 cursor: pointer;
-                background-color: red;
-                border-bottom: 5px solid rgb(211, 0, 0);
+                background-color: var(--clr-navBtnHvr);
+                border-bottom: 5px solid var(--clr-navBtnShade);
+                .supIcon, .DLIcon, .ModeIcon{
+                    background-color: var(--clr-navInHL);
+                    color: var(--clr-navInHL);
+                }
+                p{
+                    color: var(--clr-navInHL);
+
+                }
                 .arrowDIcon{
-                    background-color: white;
+                    background-color: var(--clr-navInHL);
                 }
             }
         }
@@ -209,14 +229,14 @@ body{
                     width: 600px;
                 }
                 .subtitle{
-                    background: linear-gradient(90deg,#2f00009f,rgba(255, 0, 0, 0));
-                    border-left: 5px solid red;
-                    width: 590px;
-                    font-family: jetMono;
+                    background: linear-gradient(90deg,var(--clr-mainbg),rgba(0, 0, 0, 0));
+                    border-left: 5px solid var(--clr-main);
                     font-size: 8px;
+                    width: 590px;
                     h1{
                         margin-left: 50px;
                         font-weight: 50;
+                        color: white;
 
                     }
                 }
@@ -225,28 +245,30 @@ body{
                 display: flex;
                 margin-top: 50px;
                 padding-bottom: 5px;
-                border-bottom: 2px solid red;
-                width: 220px;
+                border-bottom: 2px solid var(--clr-cardBrdr);
+                width: 210px;
                 justify-content: center;
-                color: white;
+                color: var(--clr-cardBrdr);
                 text-decoration: none;
 
                 .dlButton{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: rgba(47, 0, 0, 0.8);
-                    width: 200px;
-                    height: 60px;
-                    border: 1px solid red;
-                    border-bottom: 5px solid red;
+                    background-color: var(--clr-cardbg);
+                    border: 1px solid var(--clr-cardBrdr);
+                    border-bottom: 5px solid var(--clr-cardBrdr);
+                    backdrop-filter: blur(10px);
                     border-radius: 5px;
+                    height: 60px;
+                    width: 200px;
                 }
                 .dlButton:hover{
-                    background-color: red;
-                    border: 1px solid rgb(200, 0, 0);
-                    border-bottom: 5px solid rgb(200, 0, 0);
+                    background-color: var(--clr-cardBrdr);
+                    border: 1px solid var(--clr-cardBrdr);
+                    border-bottom: 5px solid var(--clr-mainHvrShade);
                     cursor: pointer;
+                    color: white;
                 }
             }
         }
@@ -326,14 +348,14 @@ body{
                 flex-direction: column;
                 width: 80%;
                 height: 100%;
-                color: white;
+                color: var(--clr-mainText);
                 .CardsTS{
                     display: flex;
                     justify-content: center;
                     margin-bottom: 80px;
                     max-width: 300px;
                     width: 35%;
-                    color: white;
+                    color: var(--clr-mainText);
                     
                 }
                 .CardsM{
@@ -361,14 +383,14 @@ body{
                 }
                 .card{
                     width: auto;
-                    background-color: #48000094;
+                    background-color: var(--clr-cardbg);
                     backdrop-filter: blur(10px);
-                    border: 1px solid rgb(194, 1, 1);
-                    border-bottom: 7px solid rgb(194, 1, 1);
+                    border: 1px solid var(--clr-cardBrdr);
+                    border-bottom: 7px solid var(--clr-cardBrdr);
                     transition: ease-in 0.1s;
                     text-decoration: none;
                     border-radius: 5px;
-                    color: white;
+                    color: var(--clr-cardText);
                     .cardTop{
                         display: flex;
                         margin: 5px 10px;
@@ -401,43 +423,44 @@ body{
                         display: flex;
                         align-items: center;
                         justify-content: right;
-                        border-top: 1px solid red;
+                        border-top: 1px solid var(--clr-cardBrdr);
                         padding-top: 5px;
                         height: 30px;
                         p{
                             margin: 0;
-                            color: red;
+                            color: var(--clr-cardTextHL);
                         }
                         .icon{
                             display: inline-block;
                             width: 50px;
                             height: 50px;
-                            background-color: red;
+                            background-color: var(--clr-cardTextHL);
                             mask: url('../Assets/Icons/arrowR.svg') no-repeat center / contain;
                         }
                     }
                     
                 }
                 .card:hover{
-                    border: 1px solid sred;
-                    border-bottom: 7px solid red;
-                    background-color: #480000da;
+                    border: 2px solid varvar(--clr-cardBrdr);
+                    border-bottom: 7px solid var(--clr-cardBrdr);
+                    background-color: var(--clr-cardbg);
                     cursor: pointer;
                     transform: rotate(-2.5deg)
                     scale(1.1);
                     transition: 0.1s ease-out ;
                     .cardBottom{
-                        background-color: red;
+                        background-color: var(--clr-cardBrdr);
+                        border-bottom: 2px solid var(--clr-cardBrdr);
                         margin: 0;
                         p{
-                            color:#480000da;
+                            color: var(--clr-cardTextHvr);
                             font-weight: 1000;
                         }
                         .icon{
                             display: inline-block;
                             width: 50px;
                             height: 50px;
-                            background-color: #480000da;
+                            background-color: var(--clr-cardTextHvr);
                             mask: url('../Assets/Icons/arrowR.svg') no-repeat center / contain;
                         }
                     }
@@ -455,10 +478,11 @@ body{
     footer{
         width: 100%;
         height: auto;
-        background-color: rgba(40, 0, 0, 0.8);
+        background-color: rgb(from var(--clr-navbg) r g b / 0.6);
         border-radius: 2.5px 2.5px 5px 5px;
-        border-bottom: 5px solid red;
-        border-top: 1px solid red;
+        border-bottom: 5px solid var(--clr-navBrdr);
+        border-top: 1px solid var(--clr-navBrdr);
+        backdrop-filter: blur(5px);
         flex-direction: column;
         align-items: center;
         padding-top: 10px;
@@ -474,17 +498,16 @@ body{
             margin-bottom: 10px;
             p{
                 text-align: center;
-                color: rgba(255, 255, 255, 0.6);
+                color: rgb(from var(--clr-mainText) r g b / 0.3);
                 
             }
             a{
                 margin-left: 5px;
                 text-decoration: none;
-                color: rgb(250, 30, 30);
-                opacity: 100%;
+                color: var(--clr-HLText);
             }
             a:hover{
-                color: white;
+                color: var(--clr-mainText);
                 opacity: 100%;
                 text-decoration: underline;
             }
@@ -510,15 +533,16 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 padding-left: 25px;
-                border-left: 5px solid red;
+                border-left: 5px solid var(--clr-mainHvr);
                 border-radius: 5px;
-                height: 70%;
+                height: 50%;
 
                 .footDesc{
                     margin: 0;
-                    font-size: 14px;
+                    font-size: 12px;
                     text-align: justify;
                     opacity: 70%;
+                    color: rgb(from var(--clr-mainText) r g b / 0.8)
 
                 }
                 .linksCont{
@@ -540,11 +564,11 @@ body{
                         a{
                             text-decoration: none;
                             font-size: 14px;
-                            color: red;
-                            padding: 0.25rem 0.5rem;
+                            color: var(--clr-HLText);
+                            padding: 0.1rem 0.25rem;
                         }
                         a:hover{
-                            color: white;
+                            color: var(--clr-mainTextHvr);
                             text-decoration: underline;
                         }
                     }

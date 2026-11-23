@@ -1,0 +1,57 @@
+root,
+:root[data-theme="dark"]{
+    /*Base Color*/
+    --clr-bg:            black;
+    --clr-mainText:      rgb(255, 255, 255);
+    --clr-HLText:        red;
+    --clr-mainbg:        #1e0b0b80;
+    --clr-main:          #C50000;
+    
+    --clr-mainHvr:       red;
+    --clr-mainHvrShade:  #C50000;
+    /*NAVBAR*/
+    --clr-navbg:         rgba(30, 11, 11, 0.80);
+    --clr-navInHL:       rgb(255, 255, 255);
+    --clr-navText:       rgb(255, 255, 255);
+    --clr-navBrdr:       rgb(218, 0, 0);
+    --clr-navBtnHvr:     rgb(218, 0, 0);
+    --clr-navBtnbg:      #1e0b0b80;
+    --clr-navBtnShade:   rgb(190, 1, 1);
+
+    /*CARD*/
+    --clr-cardbg:        rgba(72, 0, 0, 0.6);
+    --clr-cardbgHL:      rgba(72, 0, 0, 0.6);
+    --clr-cardBrdr:      rgba(230, 0, 0, 1);
+    --clr-cardText:      rgb(255, 255, 255);
+    --clr-cardTextHL:    rgb(255, 0, 0);
+    --clr-cardTextHvr:   rgba(72, 0, 0, 0.6);
+    
+
+}
+:root[data-theme="light"]{
+    /*MAIN*/
+    --clr-bg:            rgb(255, 174, 174);
+    --clr-mainText:      rgb(255, 0, 0);
+    --clr-HLText:        rgb(196, 0, 0);
+    --clr-mainbg:        #e0050580;
+    --clr-mainbg95:      rgba(180, 70, 70, 0.8);
+    --clr-main:          #C50000;
+    
+    --clr-mainHvr:       rgb(99, 0, 0);
+    --clr-mainHvrShade:  #C50000;
+    /*NAVBAR*/
+    --clr-navbg:         rgba(255, 224, 224, 0.5);
+    --clr-navInHL:       rgb(255, 255, 255);
+    --clr-navText:       rgb(0, 0, 0);
+    --clr-navBrdr:       rgb(218, 0, 0);
+    --clr-navBtnHvr:     rgb(218, 0, 0);
+    --clr-navBtnbg:      rgb(255, 162, 162);
+    --clr-navBtnShade:   rgb(190, 1, 1);
+    
+    /*CARD*/
+    --clr-cardbg:        rgba(252, 198, 198, 0.25);
+    --clr-cardBrdr:      rgb(211, 0, 0);
+    --clr-cardText:      rgb(0, 0, 0);
+    --clr-cardTextHL:    rgb(255, 0, 0);
+    --clr-cardTextHvr:   rgba(255, 154, 154, 1);
+}   

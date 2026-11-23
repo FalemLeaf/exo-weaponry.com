@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="Styles/MainCSS.css">
     <link rel="stylesheet" href="Styles/MainCSS_Vert.css" media="(max-width: 780px)">
     <link rel="icon" type="image/png" href="Assets/Icons/favicon.png">
+    <script src="/Scripts/MainJS.js"></script>
 </head>
 <body>
     <div class="HomeBg">
         <div class="GridBg"></div>
-        <video autoplay muted loop playsinline class="MainBg">
-            <source src="Assets/Vids/HomeBG.mp4" type="video/mp4">
-        </video>
+        <video autoplay muted loop playsinline class="MainBg" id="bgVideo" aria-hidden="true"></video>
     </div>
     <div class="nav">
         <div class="rightNavCont">
@@ -28,6 +27,11 @@
             </div>
         </div>
         <div class="leftNav">
+            <div class="navButton mode" id="themeToggle" type="button" aria-label="Toggle dark and light mode">  
+                <a class="buttonCont">
+                    <span class="ModeIcon">Mode</span>
+                </a>
+            </div>
             <div class="navButton">
                 <a class="buttonCont" href="https://www.curseforge.com/hytale/mods/fls-exotic-weaponry">
                     <span class="DLIcon">Download</span>
@@ -64,7 +68,6 @@
                 <img class="in1" src="Assets/Imgs/Home/magic-circle/Inner-circle.webp" alt="center-star">
                 <img class="in2" src="Assets/Imgs/Home/magic-circle/Inner-square-circle.webp" alt="center-star">
                 <img class="mid" src="Assets/Imgs/Home/magic-circle/Middle-sqaure-circle.webp" alt="center-star">
-                <img class="out1" src="Assets/Imgs/Home/magic-circle/Outer-star.webp" alt="center-star">
                 <img class="out2" src="Assets/Imgs/Home/magic-circle/Outer-square-cicle.webp" alt="center-star">
             </div>
             <ul class="cardSelection">
