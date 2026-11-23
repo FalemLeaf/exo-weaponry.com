@@ -233,7 +233,7 @@ body{
         }
     }
     footer{
-        height: 140px;
+        height: auto;
         
         .license{
             font-size: 8px;
@@ -250,7 +250,7 @@ body{
 
             }
             .footInfo{
-                width: 60%;
+                width: 50%;
                 height: 70%;
                 border-left: 2.5px solid red;
                 border-radius: 2px;

@@ -1,4 +1,5 @@
 @import url(anims.css);
+
 html{
     scrollbar-color: #c50000 #1E0B0B;
     scroll-behavior: smooth;
@@ -145,7 +146,7 @@ body{
                 padding: 0 5px;
                 margin-right: 10px;
                 border-radius: 2px;
-                opacity: 75%;
+                opacity: 85%;
 
 
                 .buttonCont{
@@ -155,23 +156,18 @@ body{
                     justify-content: center;
                     text-decoration: none;
                     color: white;
+                    font-weight: 500;
 
-                    .DLIcon {
+                    .supIcon, .DLIcon {
+                        background-color: white;
                         display: inline-block;
                         margin-right: 2px;
-                        width: 26px;
-                        height: 26px;
-                        background-color: white;
+                        color: white;
+                        height: 24px;
+                        width: 24px;
                         mask: url('../Assets/Icons/download.svg') no-repeat center / contain;
                     }
-                    .supIcon{
-                        display: inline-block;
-                        margin-right: 2px;
-                        width: 24px;
-                        height: 24px;
-                        background-color: white;
-                        mask: url('../Assets/Icons/support.svg') no-repeat center / contain;
-                    }
+                
                 }
 
                 .arrowDIcon {
@@ -185,6 +181,11 @@ body{
             .navButton:hover{
                 opacity: 100%;
                 cursor: pointer;
+                background-color: red;
+                border-bottom: 5px solid rgb(211, 0, 0);
+                .arrowDIcon{
+                    background-color: white;
+                }
             }
         }
         
@@ -306,7 +307,7 @@ body{
                     filter: drop-shadow(0px 0px 8px red)
                 }
                 .out1{
-                    width: 370px;
+                    width: 512px;
                     animation: rotRight 120s linear infinite;
                     opacity: 80%;
                 }
@@ -453,7 +454,7 @@ body{
 
     footer{
         width: 100%;
-        height: 160px;
+        height: auto;
         background-color: rgba(40, 0, 0, 0.8);
         border-radius: 2.5px 2.5px 5px 5px;
         border-bottom: 5px solid red;
@@ -473,12 +474,14 @@ body{
             margin-bottom: 10px;
             p{
                 text-align: center;
-                opacity: 35%;
+                color: rgba(255, 255, 255, 0.6);
+                
             }
             a{
                 margin-left: 5px;
                 text-decoration: none;
-                color: red;
+                color: rgb(250, 30, 30);
+                opacity: 100%;
             }
             a:hover{
                 color: white;
@@ -493,7 +496,7 @@ body{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 20px;
+            padding-bottom: 25px;
             margin: 0 50px;
             height: 100%;
             .logo{
@@ -513,7 +516,7 @@ body{
 
                 .footDesc{
                     margin: 0;
-                    font-size: 12px;
+                    font-size: 14px;
                     text-align: justify;
                     opacity: 70%;
 
@@ -530,17 +533,19 @@ body{
                         .cat{
                             margin: 0;
                             margin-top: 10px;
-                            font-size: 16px;
+                            font-size: 14px;
                             font-weight: 200;
+                            margin-bottom: 5px;
                         }
                         a{
                             text-decoration: none;
+                            font-size: 14px;
                             color: red;
-                            font-size: 12px;
+                            padding: 0.25rem 0.5rem;
                         }
                         a:hover{
                             color: white;
-                            opacity: 60%;
+                            text-decoration: underline;
                         }
                     }
                 }
