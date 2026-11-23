@@ -14,10 +14,11 @@ body{
             top: 50px;
         }
         .MainBg{
+            top: none;
             position: fixed;
             inset: 0;
-            width: 120%;
-            height: 120%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             z-index: -1;
             opacity: 25%;
