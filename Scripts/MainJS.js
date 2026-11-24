@@ -19,10 +19,10 @@ function setVideo(name) {
   const v = document.getElementById('bgVideo');
   if (!v) return;
   const src = themes[name].video;
-  if (v.getAttribute('src') === src) return;   // already correct
+  if (v.getAttribute('src') === src) return;
   v.src = src;
   v.load();
-  v.play().catch(() => {});                    // autoplay can be blocked; ignore
+  v.play().catch(() => {});  
 }
 
 function applyTheme(name) {
@@ -32,7 +32,7 @@ function applyTheme(name) {
   root.style.colorScheme = name;
   root.dataset.theme = name;
   try { localStorage.setItem('theme', name); } catch (e) {}
-  setVideo(name);   // does nothing until the <video> exists, see below
+  setVideo(name);  
 }
 
 let saved = null;
@@ -41,7 +41,7 @@ const system = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : '
 applyTheme(saved in themes ? saved : system);
 
 document.addEventListener('DOMContentLoaded', () => {
-  setVideo(root.dataset.theme);   // the <video> exists now, so set it
+  setVideo(root.dataset.theme); 
   const btn = document.getElementById('themeToggle');
   if (btn) btn.addEventListener('click', () =>
     applyTheme(root.dataset.theme === 'light' ? 'dark' : 'light'));
