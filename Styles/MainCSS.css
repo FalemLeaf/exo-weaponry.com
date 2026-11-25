@@ -530,7 +530,7 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 padding-left: 25px;
-                border-left: 5px solid var(--clr-mainHvr);
+                border-left: 5px solid var(--clr-navBrdr);
                 border-radius: 5px;
                 height: 50%;
 
