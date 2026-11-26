@@ -25,6 +25,10 @@ root,
     --clr-cardText:      rgb(255, 255, 255);
     --clr-cardTextHL:    rgb(255, 0, 0);
     --clr-cardTextHvr:   rgba(72, 0, 0, 0.6);
+
+    /*FOOTER*/
+    --clr-footDesc:      rgba(255, 255, 255, 0.7);
+
     
 
 }
@@ -36,7 +40,6 @@ root,
     --clr-mainbg:        #e0050580;
     --clr-mainbg95:      rgba(180, 70, 70, 0.8);
     --clr-main:          #C50000;
-    
     --clr-mainHvr:       rgb(99, 0, 0);
     --clr-mainHvrShade:  #C50000;
     /*NAVBAR*/
@@ -54,4 +57,7 @@ root,
     --clr-cardText:      rgb(0, 0, 0);
     --clr-cardTextHL:    rgb(255, 0, 0);
     --clr-cardTextHvr:   rgba(255, 154, 154, 1);
+
+    /*FOOTER*/
+    --clr-footDesc:      rgb(0, 0, 0);
 }   

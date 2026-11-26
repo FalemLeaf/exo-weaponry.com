@@ -533,7 +533,7 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 padding-left: 25px;
-                border-left: 5px solid var(--clr-mainHvr);
+                border-left: 5px solid var(--clr-main);
                 border-radius: 5px;
                 height: 50%;
 
@@ -541,8 +541,7 @@ body{
                     margin: 0;
                     font-size: 12px;
                     text-align: justify;
-                    opacity: 70%;
-                    color: rgb(from var(--clr-mainText) r g b / 0.8)
+                    color: var(--clr-footDesc);
 
                 }
                 .linksCont{
