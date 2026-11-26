@@ -3,13 +3,16 @@ const themes = {
     colors: {
 
     },
-    video: './Assets/Vids/HomeBG.mp4'
+    video: './Assets/Vids/HomeBG.mp4',
+    video: '../Assets/Vids/HomeBG.mp4'
+
   },
   light: {
     colors: {
 
     },
-    video: './Assets/Vids/HomeBG_Light.mkv'
+    video: './Assets/Vids/HomeBG_Light.mkv',
+    video: '../Assets/Vids/HomeBG_Light.mkv'
   }
 };
 
