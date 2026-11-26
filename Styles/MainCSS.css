@@ -530,11 +530,7 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 padding-left: 25px;
-<<<<<<< HEAD
-                border-left: 5px solid var(--clr-main);
-=======
                 border-left: 5px solid var(--clr-navBrdr);
->>>>>>> 64e230ff977409d0054b9a9e3ec75c36ff0d9ae2
                 border-radius: 5px;
                 height: 50%;
 

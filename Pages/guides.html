@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1.0, user-scalable=no">
     <title>Exo Weaponry</title>
     <link rel="stylesheet" href="../Styles/Fonts.css">
+    <link rel="stylesheet" href="../Styles/Theme.css">
     <link rel="stylesheet" href="../Styles/GuidesCSS.css">
     <link rel="stylesheet" href="../Styles/GuidesCSS_Vert.css" media="(max-width: 780px)">
     <link rel="icon" type="image/png" href="../Assets/Icons/favicon.png">
+    <script src="../Scripts/MainJS.js"></script>
 </head>
 <body>
     <div class="HomeBg">
         <div class="GridBg"></div>
-        <video autoplay muted loop playsinline class="MainBg">
-            <source src="../Assets/Vids/HomeBG.mp4" type="video/mp4">
-        </video>
+        <video autoplay muted loop playsinline class="MainBg" id="bgVideo" aria-hidden="true"></video>
     </div>
     <div class="nav">
         <div class="rightNavCont">
-            <div class="rightNav">
-                <img id="logo" src="../Assets/Imgs/Home/mod-header-logo.webp" alt="logo" onclick="window.location.href='../index.html'">
+            <a class="rightNav" href="../index.html" style="text-decoration: none;">
+                <img class="logo" src="../Assets/Imgs/Home/mod-header-logo.webp" alt="logo">
                 <p>Web Version 0.0.2</p>
-            </div>
+            </a>
             <div class="searchBar">
                 <span class="searchIcon"></span>
                 <input type="text" placeholder="Search...">
             </div>
         </div>
         <div class="leftNav">
+            <div class="navButton mode" id="themeToggle" type="button" aria-label="Toggle dark and light mode">  
+                <a class="buttonCont">
+                    <span class="ModeIcon">Mode</span>
+                </a>
+            </div>
             <div class="navButton">
-                <div class="buttonCont" onclick="window.open('https://www.curseforge.com/hytale/mods/fls-exotic-weaponry')">
+                <a class="buttonCont" href="https://www.curseforge.com/hytale/mods/fls-exotic-weaponry" target="_blank">
                     <span class="DLIcon">Download</span>
                     <p>Download</p>
-                </div>
+                </a>
             </div>
             <div class="navButton">
                 <div class="buttonCont">
@@ -43,10 +48,10 @@
             </div>
         </div>
     </div>
-    <div class="contentBody">
+    <main>
 
-    </div>
-    <div class="footer">
+    </main>
+    <footer>
         <div class="license">
             <p>© 2026 falemLeaf. Original text and content on this site are licensed under<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en">CC BY-NC 4.0</a> (excluding svg files and background gradient).
             </p>
@@ -72,6 +77,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
